@@ -20,8 +20,7 @@ class ItemServiceTest {
         threadB.setName("thread_B");
 
         threadA.start();
-        sleep(2000);  // no concurrency issues
-        //sleep(100); // concurrency issues has occurred
+        sleep(100); // no concurrency issues
 
         threadB.start();
 
