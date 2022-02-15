@@ -15,6 +15,9 @@ public class ItemService {
         sleep(1000);
 
         log.info("조회: 현재 가격 = {}", this.price.get());
+
+        this.price.remove();
+        log.info("thread 삭제: 가격 = {}", this.price.get());
     }
 
     private void sleep(int millisecond) {
